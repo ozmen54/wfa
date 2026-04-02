@@ -34,6 +34,8 @@ jobs:
     - name: Build with Gradle Wrapper
       run: ./gradlew build
 
+    - name: List files
+      run: ls -R build
 
     #Create a docker image and push it to the hub
     - name: Login to DockerHub
